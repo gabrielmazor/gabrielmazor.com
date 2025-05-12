@@ -300,7 +300,7 @@
     <div class="container navbar bottom mobile">
       <div class="grid-item footcopy">
         <a href="index.html" aria-current="page" class="logolink w-inline-block w--current"><img src="images/GM-Logo.svg" loading="lazy" alt="" class="logo"></a>
-        <div class="copyright_text">© 2025 Gabriel Mazor</div>
+        <div class="copyright_text">© <span id="year"></span> Gabriel Mazor</div>
       </div>
       <div class="grid-item mobilewide">
         <div class="link_container hide">
@@ -375,6 +375,9 @@
           return false;
         });
       });
+    </script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
